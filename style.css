@@ -1,0 +1,210 @@
+:root {
+  --primary: #008000;
+  --secondary: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ****** nav ******** */
+
+.navigation {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navigation .link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.navigation .nav-pills {
+  /* display: flex;
+    justify-content: end; */
+  text-align: end;
+}
+
+.navigation .link-active {
+  font-weight: 600;
+}
+
+.list-non-bullet {
+  list-style: none;
+  width: 70%;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 100ms ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}
+
+/* ****** others ****** */
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+/* ***** footer ****** */
+
+footer {
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
+.footer-links {
+  display: inline-block;
+  color: #fff;
+  padding: 0 1rem 0;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer-links:hover {
+  transform: scale(1.05);
+}
+
+.footer-name {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+/* **** is Triangle styling***** */
+
+.container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.isTriangle-head {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.angle-input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  border: 2px solid var(--primary);
+}
+
+.isTriangle-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+#is-triangle-btn,
+#submit-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  letter-spacing: 0.3px;
+}
+
+#submit-btn:hover,
+#is-triangle-btn:hover {
+  background-color: #008000d2;
+}
+
+#output,
+#output1 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+/* ***** quiz ******* */
+
+.quiz-head {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+.quiz-sec-head {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.2rem 1rem 1rem;
+}
+
+.quiz-form {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.question-container {
+  margin: 3rem;
+}
+
+.quiz-label {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/* ****** hypotenuse ***** */
+.hypo-head {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+.note {
+  display: block;
+  margin: 0 1rem 1.5rem;
+}
+
+.formula {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0.5rem 0.5rem;
+}
