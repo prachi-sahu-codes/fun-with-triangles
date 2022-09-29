@@ -13,7 +13,9 @@ function calculateHypotenuse() {
       Number(sides[1].value)
     );
     const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-    output.innerText = `The length of Hypotenuse is ${lengthOfHypotenuse}`;
+    output.innerText = `The length of Hypotenuse is ${lengthOfHypotenuse.toFixed(
+      2
+    )}`;
   } else {
     output.innerText = "Please input all the sides of a Triangle in numerals!!";
   }
