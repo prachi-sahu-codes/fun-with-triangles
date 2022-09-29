@@ -7,7 +7,7 @@ function calculateSumOfSquares(a, b) {
   return sumOfSquares;
 }
 function calculateHypotenuse() {
-  if (Number(sides[0].value) !== 0 && Number(sides[1].value) !== 0) {
+  if (Number(sides[0].value) > 0 && Number(sides[1].value) > 0) {
     const sumOfSquares = calculateSumOfSquares(
       Number(sides[0].value),
       Number(sides[1].value)
@@ -17,7 +17,8 @@ function calculateHypotenuse() {
       2
     )}`;
   } else {
-    output.innerText = "Please input all the sides of a Triangle in numerals!!";
+    output.innerText =
+      "Please input all the sides in positive numerals without leaving empty or 0!!";
   }
 }
 

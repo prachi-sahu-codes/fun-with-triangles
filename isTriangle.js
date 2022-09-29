@@ -9,9 +9,9 @@ function calculateSumAngle(angle1, angle2, angle3) {
 
 function isTriangle() {
   if (
-    Number(inputs[0].value) !== 0 &&
-    Number(inputs[1].value) !== 0 &&
-    Number(inputs[2].value) !== 0
+    Number(inputs[0].value) > 0 &&
+    Number(inputs[1].value) > 0 &&
+    Number(inputs[2].value) > 0
   ) {
     const totalSumAngle = calculateSumAngle(
       Number(inputs[0].value),
@@ -26,7 +26,7 @@ function isTriangle() {
     }
   } else {
     output.innerText =
-      "Please input all the angles of a Triangle in numerals!!";
+      "Please input all the sides in positive numerals without leaving empty or 0!!";
   }
 }
 

@@ -8,7 +8,7 @@ function calculateAreaOfTriangle(a, b) {
 }
 
 function calculateArea() {
-  if (Number(inputs[0].value) !== 0 && Number(inputs[1].value) !== 0) {
+  if (Number(inputs[0].value) > 0 && Number(inputs[1].value) > 0) {
     const areaOfTriangle = calculateAreaOfTriangle(
       Number(inputs[0].value),
       Number(inputs[1].value)
@@ -16,7 +16,8 @@ function calculateArea() {
 
     output.innerText = `The area of Triangle is ${areaOfTriangle}`;
   } else {
-    output.innerText = "Please input all the sides of a Triangle in numerals!!";
+    output.innerText =
+      "Please input all the sides in positive numerals without leaving empty or 0!!";
   }
 }
 
